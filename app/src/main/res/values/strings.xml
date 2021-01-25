@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+
+    <!-- Login Screen -->
+    <string name="hint_e_mail">Email address</string>
+    <string name="hint_password">Password</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_your_account">Create new account</string>
+    <string name="or">--Or--</string>
+
+    <!-- Welcome Screen-->
+    <string name="welcome_message">Welcome to our new online store!</string>
+    <string name="welcome_message_2">Buy design shoes from the new 2021 collection. High quality, fashionable, original footwear. We love to keep things stylish and sophisticated! </string>
+
+    <!-- Instructions Screen -->
+    <string name="check_out_instructions">Check out instructions </string>
+    <string name="instructions_2">Free shipping and 2 years warranty.</string>
+    <string name="instructions_1">Happy to show you our newest collection!</string>
+    <string name="browse_the_collection">Browse the collection</string>
+    <string name="dress_shoe_description">Dress Shoe is a shoe to be worn at smart casual or more formal events. A dress shoe is typically contrasted to an athletic shoe.Dress shoes are worn by many as their standard daily shoes, and are widely used in dance, for parties, and for special occasions. Mens dress shoes are most commonly black or brown. Cordovan or oxblood dress shoes are worn by men sometimes in the United States, while the other colors are worn by men of many nationalities.</string>
+
+    <!-- Store Screen -->
+    <string name="action_logout">Logout</string>
+    <string name="content_description_add_new_shoe_button">Add New Shoe Button</string>
+
+    <!-- Details Screen -->
+    <string name="label_name">Name:</string>
+    <string name="label_company">Company:</string>
+    <string name="label_size">Size:</string>
+    <string name="label_description">Model description:</string>
+
+    <!-- Edit Screen -->
+    <string name="title_add_new_shoe">Add New Shoe</string>
+
+    <string name="hint_shoe_name">Shoe name</string>
+    <string name="hint_shoe_company">Shoe company</string>
+    <string name="hint_shoe_size">Shoe Size</string>
+    <string name="hint_shoe_description">Shoe description</string>
+
+    <string name="action_save">Save</string>
+    <string name="error_all_fields_must_be_filled_in">Error with saving the shoe item. All the fields must be filled in</string>
+
+    <string name="dialog_discard_changes_message">Discard your changes and quit editing?</string>
+    <string name="dialog_discard_changes_button_discard">Discard</string>
+    <string name="dialog_discard_changes_button_keep_editing">Keep Editing</string>
+</resources>

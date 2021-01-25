@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+
+        <variable
+            name="clickListener"
+            type="com.udacity.shoestore.store.ShoeClickListener" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/list_item_min_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_side"
+            android:onClick="@{() -> clickListener.onClick(shoe)}"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin_components">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/text_shoe_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="@{shoe.name}"
+                    android:textAppearance="?textAppearanceSubtitle1"
+                    tools:text="Fashion boots" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/text_shoe_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{shoe.size}"
+                    android:textAppearance="?textAppearanceSubtitle1"
+                    tools:text="5.0 - 11.0" />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_shoe_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingTop="4dp"
+                android:paddingBottom="@dimen/margin_components"
+                android:text="@{shoe.description}"
+                android:textAppearance="?textAppearanceListItemSecondary"
+                tools:text="Fashion boots" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/margin_side"
+            android:background="?android:attr/dividerVertical" />
+
+    </FrameLayout>
+</layout>
